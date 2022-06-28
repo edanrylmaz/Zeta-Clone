@@ -9,21 +9,16 @@
 </head>
 <style>
     .services{
-        height: 100%;
+        height: auto;
     }
     /* mobile view for services section start */
     .services > .container h2 {
         font-size: 36px;
     }
-    span {
-        font-family: 'Montserrat-Bold';
-        font-size: 36px;
-        text-align: center;
-    }
     .top-left {
         z-index: 90;
-        left: 2rem;
-        top: 1.5rem;
+        left: 3rem;
+        top: 3rem;
         width: 16px;
         height: 16px;
     }
@@ -31,17 +26,13 @@
         font-family: 'Montserrat-Black';
         font-size: 16px;   
     }
-    h3 ~ p {
-        font-family: 'Montserrat-Regular';
-        font-size: 16px;
+    h3 span {
+        font-size: 34px;
     }
-    h3 ~ p img {
+    h3 + ul li img {
+        width: 26px;
         padding-right: .75rem;
-    } div > div > p {
-        font-family: 'Montserrat-Regular';
-        text-align: justify;
     }
-    
     .services .main-header {
         margin: .75rem 0 2rem 0;
     }
@@ -68,12 +59,12 @@
 <body>
     <nav class="d-flex white-bg position-fixed align-items-center w-lg-100 w-100">
         <div class="container d-flex d-lg-row justify-content-between align-items-center ">
-            <a class="d-block" href="#"><img src="assets/images/cropped-zetadesign-navbar-logo.png" alt=""></a>
+            <a class="d-block" href="#"><img src="assets/icons/cropped-zetadesign-navbar-logo.svg" alt=""></a>
             <ul class=" navbar-menu d-lg-flex flex-lg-row justify-content-lg-between align-items-center w-lg-auto white-lg-bg navbar-lg-text py-lg-0 flex-column navbar-text green-bg py-5">
-                <li class="position-static ml-lg-3-5 py-2 list-border"><a href="#">Products</a></li>
-                <li class="position-static ml-lg-3-5 py-2 selected list-border"><a href="#">Services</a></li>
-                <li class="position-static ml-lg-3-5 py-2 list-border"><a href="#">References</a></li>
-                <li class="position-static ml-lg-3-5 py-2"><a href="#">Contact Us</a></li>
+                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="#">Products</a></li>
+                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 selected list-border"><a href="#">Services</a></li>
+                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="#">References</a></li>
+                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2"><a href="#">Contact Us</a></li>
                 <div class="phone d-lg-none d-flex p-1 regular position-absolute">
                     <a class=" d-flex align-items-center" href="#"><img class="mr-0-25" src="assets/icons/phone-navbar.svg" alt="">+90 535 535 3535</a>
                 </div>
@@ -81,89 +72,100 @@
             <div class=" d-lg-block d-none button-main">
                 <a href="#">LET'S HAVE A TALK</a>
             </div>
-            <div class="hamburger-menu d-flex flex-column justify-content-between align-items-center">
+            <div class="hamburger-menu d-flex d-lg-none flex-column justify-content-between align-items-center">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
         </div>
     </nav>
-    <section class="services green-bg py-3 w-lg-100">
+    <section class="services green-bg py-3">
         <div class="container">
             <div class="main-header mb-md-4 ">
                 <p class="grey bold px-1">ALL OF THEM</p>
                 <h2 class="main-text px-1">SERVICES</h2>
             </div>
-            <div class="row mx-auto position-relative">
-                <div class="col-lg-6 black-bg mx-lg-0 mx-1">
-                    <div class="top-left d-flex flex-column position-absolute">
-                        <ul class="w-100" style="list-style: none; text-align: center;">
-                            <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
-                            <li class="main-text bold">1</li>
-                        </ul>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between align-items-center p-5 m-lg-3 m-xl-3">
-                        <span class="green-text">design</span>
-                        <span class="main-text">design</span>
-                        <span class="grey-text">design</span>
+            <div class="row mx-auto p-1 my-1 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">1</li> 
+                    </ul>
+                </div>
+                <div class="col-lg-6 black-bg p-1 d-flex justify-content-center align-items-center flex-column">
+                    <div class="p-4">
+                        <h3 class="d-flex flex-column justify-content-center align-items-center">
+                            <span class="green-text">design</span>
+                            <span class="main-text">design</span>
+                            <span class="grey-text">design</span>
+                        </h3>
                     </div>
                 </div>
-                <div class="col-lg-6 white-bg mx-lg-0 mx-1">
-                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 m-lg-4 m-xl-3">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
-                        <h3 class="green-text mt-2">Guaranteed</h3>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-1.svg" alt="">Creativity</p>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-2.svg" alt="">Innovation</p>
+                <div class="col-lg-6 white-bg mx-lg-0 p-1 d-flex flex-column align-item-center justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 p-lg-3 p-xl-3">
+                        <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
+                        <h3 class="green-text pt-2">Guaranteed</h3>
+                        <ul>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-1.svg" alt="">Creativity</p></li>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-2.svg" alt="">Innovation</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row mx-auto position-relative mt-4">
-                <div class="col-lg-6 black-bg mx-lg-0 mx-1">
-                    <div class="top-left d-flex flex-column position-absolute">
-                        <ul class="w-100" style="list-style: none; text-align: center;">
-                            <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
-                            <li class="main-text bold">2</li>
-                        </ul>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between align-items-center p-5 m-lg-3 m-xl-3">
-                        <span class="green-text">trade</span>
-                        <span class="main-text">trade</span>
-                        <span class="grey-text">trade</span>
+            <div class="row mx-auto p-1 my-1 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">2</li> 
+                    </ul>
+                </div>
+                <div class="col-lg-6 black-bg p-1 d-flex justify-content-center align-items-center flex-column">
+                    <div class="p-4">
+                        <h3 class="d-flex flex-column justify-content-center align-items-center">
+                            <span class="green-text">trade</span>
+                            <span class="main-text">trade</span>
+                            <span class="grey-text">trade</span>
+                        </h3>
                     </div>
                 </div>
-                <div class="col-lg-6 white-bg mx-lg-0 mx-1">
-                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 m-lg-3 m-xl-3">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
-                        <h3 class="green-text mt-2">Guaranteed</h3>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-3.svg" alt="">Customer Satisfaction</p>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-4.svg" alt="">High Quality</p>
+                <div class="col-lg-6 white-bg mx-lg-0 p-1 d-flex flex-column align-item-center justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 p-lg-3 p-xl-3">
+                        <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
+                        <h3 class="green-text pt-2">Guaranteed</h3>
+                        <ul>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-3.svg" alt="">Customer Satisfaction</p></li>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-4.svg" alt="">High Quality</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row mx-auto position-relative mt-4">
-                <div class="col-lg-6 black-bg mx-lg-0 mx-1">
-                    <div class="top-left d-flex flex-column position-absolute">
-                        <ul class="w-100" style="list-style: none; text-align: center;">
-                            <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
-                            <li class="main-text bold">3</li>
-                        </ul>
-                    </div>
-                    <div class="d-flex flex-column justify-content-between align-items-center py-5 px-3 m-lg-3 m-xl-3">
-                        <span class="green-text">fabrication</span>
-                        <span class="main-text">fabrication</span>
-                        <span class="grey-text">fabrication</span>
+            <div class="row mx-auto p-1 my-1 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">3</li> 
+                    </ul>
+                </div>
+                <div class="col-lg-6 black-bg p-1 d-flex justify-content-center align-items-center flex-column">
+                    <div class="p-4">
+                        <h3 class="d-flex flex-column justify-content-center align-items-center">
+                            <span class="green-text">fabrication</span>
+                            <span class="main-text">fabrication</span>
+                            <span class="grey-text">fabrication</span>
+                        </h3>
                     </div>
                 </div>
-                <div class="col-lg-6 white-bg mx-lg-0 mx-1">
-                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 m-lg-3 m-xl-3">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
-                        <h3 class="green-text mt-2">Guaranteed</h3>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-5.svg" alt="">Cost Effective</p>
-                        <p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-6.svg" alt="">Warranty</p>
+                <div class="col-lg-6 white-bg mx-lg-0 p-1 d-flex flex-column align-item-center justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-item-center py-3 px-1-5 p-lg-3 p-xl-3">
+                        <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, alias ratione animi eos quo amet. Sunt praesentium quidem ad quisquam temporibus nobis velit nisi illum et voluptatibus adipisci, possimus quibusdam?</p>
+                        <h3 class="green-text pt-2">Guaranteed</h3>
+                        <ul>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-5.svg" alt="">Cost Effective</p></li>
+                            <li><p class="mt-1 d-flex align-item-center"><img src="assets/icons/optionlist-icon-6.svg" alt="">Warranty</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
         </div>
     </section> 
     <footer class="black-bg py-2">
