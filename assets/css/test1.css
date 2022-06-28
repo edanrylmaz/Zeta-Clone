@@ -194,8 +194,8 @@ nav div a img {
         height: 3px;
         position: absolute;
         /*margin-left: -3.5rem;
-        top: 70%; */
-    }
+        top: 70%;  }*/
+   
     .navbar-menu li:hover {
         transform: scale(1.1);
         transition: transform 0.2s ease-in-out;

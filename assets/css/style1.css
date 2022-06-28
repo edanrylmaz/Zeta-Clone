@@ -87,9 +87,9 @@ button,
 ul {
   padding: 0;
 }
-ul {
+/*ul {
   list-stylealign-centd: none;
-}
+} */
 b,
 strong {
   font-weight: bolder;
