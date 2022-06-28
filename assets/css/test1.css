@@ -72,6 +72,10 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 15px;
     color: var(--grey);
 }
+.button-main:hover {
+    color: var(--main-text);
+    background-color: var(--green-main);
+}
 nav {
     height: 90px;
     top: 0;
@@ -99,9 +103,8 @@ nav div a img {
         gap: 10px;
         border-radius: 10px;
         background-color: var(--green-main);
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-        opacity 0.55s ease; ;
+        transition: transform 0.5s ease-in-out, 
+        opacity 0.55s ease; 
 
     }
     .hamburger-menu .line:nth-child(1) {
@@ -162,10 +165,12 @@ nav div a img {
         text-align: center;
     }
 }
-
-
 /* navbar end */
-
+/* footer start */
+    footer ul li a:hover {
+        color: var(--green-main);
+    }
+/* footer end */
 /*mobile view end */
 
 /* desktop view start */
@@ -199,6 +204,9 @@ nav div a img {
     .navbar-menu li:hover {
         transform: scale(1.1);
         transition: transform 0.2s ease-in-out;
+    }
+    .footer-lg li img {
+        width: 34px;
     }
 }
 /* desktop view end */
