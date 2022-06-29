@@ -164,6 +164,9 @@ nav div a img {
     .phone a {
         text-align: center;
     }
+    .main-header {
+        margin: .75rem 0 2rem 0;
+    }
 }
 /* navbar end */
 /* footer start */
@@ -204,6 +207,12 @@ nav div a img {
     .navbar-menu li:hover {
         transform: scale(1.1);
         transition: transform 0.2s ease-in-out;
+    }
+    .main-header p ,h2  {
+        text-align: center;
+    }
+    .main-header h2 {
+        font-size: 40px;
     }
     .footer-lg li img {
         width: 34px;
