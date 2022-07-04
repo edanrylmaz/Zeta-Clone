@@ -16,10 +16,29 @@
         width: 100%;
         height: auto;
         border-radius: 30px;
+        -webkit-box-shadow: 10px 10px 34px -7px rgba(0,0,0,0.62);
+        -moz-box-shadow: 10px 10px 34px -7px rgba(0,0,0,0.62);
+        box-shadow: 10px 10px 34px -7px rgba(0,0,0,0.62);
     }
     .card img {
         width: 262px;
         height: 64px;
+        filter: grayscale(100%);
+    }
+    section div a {
+        border: 1px solid black;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+        padding: .75rem 1rem;
+        margin: 2rem 0 1rem 0;
+    }
+    section div a img {
+        width: 12px;
+        margin-left: .5rem;
+    }
+    .card img:hover {
+        filter: grayscale(0%);
     }
     /*mobile view end */
     
@@ -41,7 +60,7 @@
                 <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="#">Products</a></li>
                 <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="services.html">Services</a></li>
                 <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border selected"><a href="#">References</a></li>
-                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2"><a href="#">Contact Us</a></li>
+                <li class="position-static ml-lg-3-5 py-lg-0 py-xl-0 py-2"><a href="contact.html">Contact Us</a></li>
                 <div class="phone d-lg-none d-flex p-1 regular position-absolute">
                     <a class=" d-flex align-items-center" href="#"><img class="mr-0-25" src="assets/icons/phone-navbar.svg" alt="">+90 535 535 3535</a>
                 </div>
@@ -65,28 +84,28 @@
             <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/ametal.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-sm-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/are.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-sm-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/ars-construction.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-sm-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/blue-flame.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/cat-mahal-hotel.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/cementers.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/freedom-church.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/gd-simpsons.svg" alt="">
             </div>
-            <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
+            <div class="card col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/growhomeseed.svg" alt="">
             </div>
             <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
@@ -116,6 +135,7 @@
             <div class="card col-ms-12 col-md-12 col-lg-3 my-lg-1 d-flex justify-content-center py-2 white-bg">
                 <img src="assets/icons/references/yeryuzu_doktorlari.svg" alt="">
             </div>
+            <a class="bold d-flex d-lg-none flex-row-reverse align-items-center" href="#"><img src="assets/icons/products-showmore.svg" alt="">SHOW MORE</a>
         </div>
     </section>
     <footer class="black-bg py-2">
