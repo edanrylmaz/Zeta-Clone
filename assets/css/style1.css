@@ -5615,6 +5615,22 @@ strong {
 .gap-5 {
   gap: 5rem;
 }
+/* add column gap */
+.gap-column-1 {
+  column-gap: 1rem;
+}
+.gap-column-2 {
+  column-gap: 2rem;
+}
+.gap-column-3 {
+  column-gap: 3rem;
+}
+.gap-column-4 {
+  column-gap: 4rem;
+}
+.gap-column-5 {
+  column-gap: 5rem;
+}
 
 @media (min-width: 576px) {
   .gap-sm-1 {
@@ -5657,12 +5673,28 @@ strong {
   .gap-md-5 {
     gap: 5rem;
   } 
+  /* add column gap property for md */
+  .gap-md-column-1 {
+    column-gap: 1rem;
+  }
+  .gap-md-column-2 {
+    column-gap: 2rem;
+  }
+  .gap-md-column-3 {
+    column-gap: 3rem;
+  }
+  .gap-md-column-4 {
+    column-gap: 4rem;
+  }
+  .gap-md-column-5 {
+    column-gap: 5rem;
+  }
 }
 @media (min-width: 992px) {
   .gap-lg-1 {
     gap: 1rem;
   }
-  
+
   .gap-lg-2 {
     gap: 2rem;
   }
@@ -5678,6 +5710,22 @@ strong {
   .gap-lg-5 {
     gap: 5rem;
   } 
+  /* add column gap property for lg */
+  .gap-lg-column-1 {
+    column-gap: 1rem;
+  }
+  .gap-lg-column-2 {
+    column-gap: 2rem;
+  }
+  .gap-lg-column-3 {
+    column-gap: 3rem;
+  }
+  .gap-lg-column-4 {
+    column-gap: 4rem;
+  }
+  .gap-lg-column-5 {
+    column-gap: 5rem;
+  }
 }
 @media (min-width: 1200px) {
   .gap-xl-1 {
@@ -5699,6 +5747,22 @@ strong {
   .gap-xl-5 {
     gap: 5rem;
   } 
+  /* add column-gap property for xl */
+  .gap-xl-column-1 {
+    column-gap: 1rem;
+  }
+  .gap-xl-column-2 {
+    column-gap: 2rem;
+  }
+  .gap-xl-column-3 {
+    column-gap: 3rem;
+  }
+  .gap-xl-column-4 {
+    column-gap: 4rem;
+  }
+  .gap-xl-column-5 {
+    column-gap: 5rem;
+  }
 }
 @media (min-width: 1400px) {
   .gap-xxl-1 {

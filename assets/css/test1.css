@@ -8,6 +8,7 @@
     --nav-height : 90px;
     --transition: 1.2s;
     --black-bg: #000000;
+    --grey-bg: #e5e5e5;
 }
 .green-bg {
     background-color: var(--green-main);
@@ -41,6 +42,9 @@
     font-size: 16px;
     color: white;
 }
+.form-bg {
+    background-color: var(--grey-bg);
+}
 /* large screen colors start */
 @media (min-width: 992px) {
     .white-lg-bg {
@@ -64,6 +68,9 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat-Bold';
 }
+h2{
+    font-size: 36px;
+}
 .button-main {
     border: 4px solid var(--green-main);
     border-radius: 30px;
@@ -71,6 +78,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat-Bold';
     font-size: 15px;
     color: var(--grey);
+    transition: 0.1s ease-in-out;
 }
 .button-main:hover {
     color: var(--main-text);
@@ -133,9 +141,6 @@ nav div a img {
         left: -100%;
         width: 100%;
         z-index: 99;
-        /*right: 0px;
-        top: 90px;
-        width: 100%; */
         height: calc(100vh - 90px);
         background-color: var(--green-main);
         transform: translateX(0%);
@@ -146,7 +151,6 @@ nav div a img {
         top: 100%;
         left: 100%;
         transform: translateX(-100%);
-        
     }
     .navbar-menu .phone {
         bottom: 3rem;
@@ -173,6 +177,9 @@ nav div a img {
     footer ul li a:hover {
         color: var(--green-main);
     }
+    footer p {
+        font-size: 12px;
+    }
 /* footer end */
 /*mobile view end */
 
@@ -191,22 +198,26 @@ nav div a img {
         transform: translateY(-50%);
     }
     /* border-buttom kullanarak alt çizgi yapma */
-    .navbar-menu li.selected {
+    /* .navbar-menu li.selected {
         border-bottom: 3.5px solid var(--green-main);
-    }
+    } */
+
     /* ::after pseudo class ile alt çizgi yapma */
-    /*.navbar-menu li.selected::after {
+    .navbar-menu li.selected::after {
         content: "";
         background-color: var(--green-main);
         width: 100%;
         height: 3px;
         position: absolute;
-        /*margin-left: -3.5rem;
-        top: 70%;  }*/
-   
+        left: 0%;
+        right: 0%;
+        bottom: -.5rem;
+    }
+    .navbar-menu li {
+        transition: transform 0.2s ease-in-out;
+    }
     .navbar-menu li:hover {
         transform: scale(1.1);
-        transition: transform 0.2s ease-in-out;
     }
     .main-header p ,h2  {
         text-align: center;
