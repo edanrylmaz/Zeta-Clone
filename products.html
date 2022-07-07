@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<style>
+    /* mobile view start */
+    .card > img {
+        object-fit: cover;
+        height: 400px;
+        filter: saturate(0);
+        transition: 0.1s ease-in-out;
+    }
+    .card img:hover {
+        filter: saturate(1);
+    }
+    .card > div > div > p{
+        color: #00000080;
+    }
+    .card > div > div > a img {
+        width: 10px;
+    }
+    .show-more {
+        border: 1px solid black;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+        padding: .75rem 1rem;
+        margin: 2rem 0 1rem 0;
+    }
+    .show-more img {
+        width: 12px;
+        margin-left: .5rem;
+    }
+    /* mobile view end */
+</style>
+<body>
+    <nav class="d-flex white-bg position-fixed align-items-center w-lg-100 w-100">
+        <div class="container d-flex d-lg-row justify-content-between align-items-center ">
+            <a class="d-block" href="#"><img src="assets/icons/cropped-zetadesign-navbar-logo.svg" alt=""></a>
+            <ul class=" navbar-menu d-lg-flex flex-lg-row justify-content-lg-between align-items-center w-lg-auto white-lg-bg navbar-lg-text py-lg-0 flex-column navbar-text green-bg py-5">
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 selected list-border"><a href="#">Products</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="services.html">Services</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a href="references.html">References</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2"><a href="contact.html">Contact Us</a></li>
+                <div class="phone d-lg-none d-flex p-1 regular position-absolute">
+                    <a class=" d-flex align-items-center" href="#"><img class="mr-0-25" src="assets/icons/phone-navbar.svg" alt="">+90 535 535 3535</a>
+                </div>
+            </ul>
+            <div class=" d-lg-block d-none button-main">
+                <a href="#">LET'S HAVE A TALK</a>
+            </div>
+            <div class="hamburger-menu d-flex d-lg-none flex-column justify-content-between align-items-center">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
+    <section class="green-bg h-auto py-2">
+        <div class="container">
+            <div class="main-header mb-md-4">
+                <p class="grey bold px-1">OUR PROVIDED</p>
+                <h2 class="main-text px-1">PRODUCTS</h2>
+            </div>
+            <div class="row p-1 my-1 d-flex flex-column flex-lg-row align-items-center flex-wrap gap-row-2">
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-1.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Roofing Sheet</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner2.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-2.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Scaffolding</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-3.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Politcarbonate Sheet</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-4.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">uPVC</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-5.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Gypsum/Cement Board</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-6.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">PVC Flooring</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-7.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Mixer</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-8.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Stone Wool</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-9.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Glass Whool</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-10.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Scaffolding</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-11.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Expanded Plystrene</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-12 col-lg-4">
+                    <img class="w-100 d-block" src="assets/images/product-img-12.png" alt="">
+                    <div class="d-flex flex-column align-item-center justify-content-center white-bg">
+                        <div class="d-flex flex-column justify-content-between align-item-center py-2 px-1-5 p-lg-3 p-xl-3">
+                            <h3 class="green-text">Pergola</h3>
+                            <p class="text-justify py-2">Sunt praesentium illum et voluptatibus adipisci, possimus quibusdam?</p>
+                            <a class="d-flex justify-content-right px-3" href="inner-page.html">
+                                <p class="green-text bold pr-1">Read More</p>
+                                <img src="assets/icons/products-readmore-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="show-more bold d-flex d-lg-none flex-row-reverse align-items-center" href="#"><img src="assets/icons/products-showmore.svg" alt="">SHOW MORE</a>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="black-bg py-2">
+        <div class="container">
+            <div class="row p-1">
+                <div class="col-lg-6 d-lg-block">
+                    <ul class="p-1 main-text regular">
+                        <li class="py-0-5"><img src="assets/icons/footer-logo.svg" alt=""></li>
+                        <li class="py-0-5"><a href="#">Privacy Terms</a></li>
+                        <li class="py-0-5"><a href="#">About Us</a></li>
+                        <li class="d-block d-lg-none py-0-5"><a href="#">Contact Us</a></li>
+                    </ul>   
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ul class=" footer-lg main-text regular py-3">
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-mail-icon.svg" alt=""><a href="#">zetadesignsltd@gmail.com</a></li>
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-phone-icon.svg" alt=""><a href="#">+256 700 836 541</a></li>
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-loc-icon.svg" alt=""><a href="#">Plat 7/8 2nd Street Industrial Area Kampala/Uganda</a></li>
+                    </ul>
+                </div>
+                <p class="pt-3 main-text regular w-100 text-center">Copyrights reserved by Zeta Design</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const toggleButton = document.getElementsByClassName('hamburger-menu')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-menu')[0]
+    toggleButton.addEventListener('click',() => {
+        navbarLinks.classList.toggle('active')
+        toggleButton.classList.toggle('cross-line')
+    });
+</script>
+</html>
