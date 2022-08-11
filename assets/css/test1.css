@@ -2,13 +2,13 @@
     --green-main: #61be6b;
     --green-dark: #70fc7f73;
     --green-light: #8dfb99;
-    --grey-text: #676767;
+    --gray-text: #676767;
     --main-text: #ffffff;
-    --grey: #456278;
+    --gray: #456278;
     --nav-height : 90px;
     --transition: 1.2s;
     --black-bg: #000000;
-    --grey-bg: #e5e5e5;
+    --gray-bg: #e5e5e5;
 }
 .green-bg {
     background-color: var(--green-main);
@@ -19,8 +19,8 @@
 .green-light {
     color: var(--green-light);
 }
-.grey-text {
-    color: var(--grey-text);
+.gray-text {
+    color: var(--gray-text);
 }
 .main-text  {
     color: var(--main-text);
@@ -28,8 +28,8 @@
 .green-text {
     color: var(--green-main);
 }
-.grey {
-    color: var(--grey);
+.gray {
+    color: var(--gray);
 }
 .white-bg {
     background-color: white;
@@ -43,7 +43,7 @@
     color: white;
 }
 .form-bg {
-    background-color: var(--grey-bg);
+    background-color: var(--gray-bg);
 }
 /* large screen colors start */
 @media (min-width: 992px) {
@@ -181,6 +181,56 @@ nav div a img {
         font-size: 12px;
     }
 /* footer end */
+
+/* contact section start */
+.contact-header {
+    top: 40%;
+    z-index: 1;
+    font-size: 40px;
+}
+.map {
+    border-radius: 20px;
+    min-height: 400px;
+    box-shadow: 0px 0px 5px 3px rgb(229 229 229);
+}
+.map-wrapper {
+    padding: 0;
+    margin: 0;
+}
+.form-wrapper {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px rgb(229 229 229);
+}
+form input {
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+    padding: .5rem 0;
+}
+form input::placeholder {
+    font-family: 'Montserrat-Regular';
+    color: black;
+    font-size: 16px;
+}
+form input:focus::placeholder {
+    color: rgb(140 140 140);
+}
+.send-btn {
+    background-color: var(--green-main);
+    color: white;
+    background-image: url('../icons/send-icon.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 12rem;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.1s ease-in-out;
+}
+.send-btn:hover {
+    background-color: white;
+    color: var(--green-main);
+    background-image: url('../icons/send-icon-hover.svg');
+}
+/* contact section end */
 /*mobile view end */
 
 /* desktop view start */
@@ -228,5 +278,16 @@ nav div a img {
     .footer-lg li img {
         width: 34px;
     }
+    /* contact section start */
+    .map-wrapper {
+        align-self: flex-end;
+    }
+    .map-wrapper .map {
+        min-height: 560px;
+    }
+    .form-wrapper {
+        align-self: flex-end;
+    }
+    /* contact section end */
 }
 /* desktop view end */

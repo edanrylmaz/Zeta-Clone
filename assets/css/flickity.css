@@ -1,0 +1,225 @@
+/*! Flickity v2.3.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+@import 'test1.css'; /* importing from root properties */ /* levent 08.04.2022 */
+
+.flickity-enabled {
+    position: relative;
+  }
+  
+  .flickity-enabled:focus { outline: none; }
+  
+  .flickity-viewport {
+    height: 100%!important; 
+    overflow: hidden;
+    position: relative;
+  }
+
+  .clients-carousel > .flickity-viewport {
+    height: 175px!important;
+    width: 100%; /* giving height to flickity viewport under client-carousel */ /* levent 06.05.2022 */
+  }
+  
+  .flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* draggable */
+  
+  .flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  /* levent 12.04.2022 */
+  /*.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }*/
+  
+  /* levent 12.04.2022 */
+  /*.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }*/
+  
+  /* ---- flickity-button ---- */
+  
+  .flickity-button {
+    position: absolute;
+    background: transparent; /* levent 08.04.2022 */
+    border: none;
+    color: #333;
+    border: 3px var(--green-light) solid; /* levent 08.04.2022 */
+  }
+  
+  .flickity-button:hover {
+    background: var(--green-light); /* levent 08.04.2022 */
+    cursor: pointer;
+  }
+  
+  .flickity-button:focus {
+    outline: none; 
+
+  }
+  
+  .flickity-button:active {
+    opacity: 0.6;
+  }
+  
+  .flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none;
+    transform: scale(1); /* levent 08.04.2022 */
+  }
+  
+  .flickity-button-icon {
+    fill: currentColor;
+  }
+  
+  /* ---- previous/next buttons ---- */
+  
+  .flickity-prev-next-button {
+    top: 35%; /* levent 13.04.2022 */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* vertically center */
+    transform: translateY(-50%);
+    transform: scale(1);
+    transition: var(--transition); /* levent 07.04.2022 */
+  }
+  
+  .flickity-prev-next-button.previous { /* left: 10px; */ left: 62px; } /* levent 07.04.2022 */
+  .flickity-prev-next-button.next { /*right: 10px;*/ left: 132px; } /* levent 07.04.2022 */
+  /* right to left */
+  .flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 10px;
+  }
+  .flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 10px;
+  }
+  
+  .flickity-prev-next-button .flickity-button-icon {
+    position: absolute;
+    left: 50%; /* levent 08.04.2022 */
+    top: 50%; /* levent 08.04.2022 */
+    transform: translate(-50%, -50%); /* levent 08.04.2022 */ /* both vertically and horizontally centered */
+    width: 33%; /* levent 08.04.2022 */
+    height: 33%; /* levent 08.04.2022 */
+    color: white; /* levent 08.04.2022 */
+  }
+  
+  /* ---- page dots ---- */
+  
+  .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    display: none; /* levent 07.04.2022 */ /* flickity dots do not appear in slider */
+  }
+
+  .clients-carousel > .flickity-page-dots {
+    bottom: -40px; /* levent 06.05.2022 */ /* flickity dots appear in clients slider */
+    display: flex; /* levent 06.05.2022 */
+    align-items: center; /* levent 06.05.2022 */
+    justify-content: center; /* levent 06.05.2022 */ /* flickity dots appear in clients slider */
+  }
+  
+  .flickity-rtl .flickity-page-dots { direction: rtl; }
+  
+  .flickity-page-dots .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    width: 12px;
+    height: 12px;
+    background: var(--green-main);
+  }
+  @media (min-width: 992px) {
+    .flickity-viewport {
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  /* mobil view starts */ 
+
+  @media (max-width: 1400px) {
+    .flickity-prev-next-button {
+      top: 40%; 
+    }
+  }
+
+  @media (max-width: 992px) {
+    .main-carousel > .flickity-page-dots {
+      /* dots both in main slider and clients slider will appear same and in line */ /* levent 14.04.2022 */
+      display: flex; /* levent 14.04.2022 */
+      align-items: center; /* levent 14.04.2022 */
+      justify-content: center; /* levent 14.04.2022 */
+    } 
+     .main-carousel > .flickity-page-dots {
+      bottom: 55px; /* levent 25.04.2022 */
+    }
+
+    .flickity-button {
+      display: none;
+    }
+
+  }
+
+  /* mobil view ends */
+
+
+
+  /* flickity for clients-carousel starts */
+  
+  /* flickity on by default */
+  .clients-carousel:after {
+    content: 'flickity';
+    display: none;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+      /* disable Flickity for large devices */
+      .clients-carousel:after {
+        content: '';
+      }
+    }
+    
+    /* no margin bottom when Flickity enabled */
+    .clients-carousel > .flickity-enabled .clients-carousel-cell {
+      margin-bottom: 0;
+    }
+    
+    /* cell number */
+    .clients-carousel > .clients-carousel-cell:before {
+      display: block;
+      text-align: center;
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+
+  /* flickity for clients-carousel ends */

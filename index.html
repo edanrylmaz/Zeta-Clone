@@ -1,0 +1,520 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    <style>
+        /* mobile view start */
+        .main-carousel {
+            height:50%;
+        }
+
+        .carousel-cell>img {
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: fill;
+        }
+
+        .inner {
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+        }
+
+        .inner>a {
+            border: 3px solid var(--green-main);
+            border-radius: 30px;
+            transition: 0.1s ease-in-out;
+            font-size: 16px;
+            padding: .75rem 1rem;
+        }
+
+        .inner>p {
+            font-size: 27px;
+        }
+
+        .slider-info {
+            z-index: 1;
+            top: 15%;
+            right: 5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .slider-info> :first-child {
+            font-size: 30px;
+            font-weight: 600;
+            border-bottom: 3px solid var(--green-main);
+            border-radius: 1px;
+        }
+
+        /* card section start */
+        .card {
+            border-radius: 20px;
+        }
+
+        .img-wrapper {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--green-main);
+            border-radius: 50%;
+        }
+        .card-title {
+            padding: 3rem .5rem 0 .5rem;
+        }
+        .card-title>p {
+            font-size: 14px;
+        }
+        .card-mid > h3 {
+            font-size: 16px;
+        }
+        .card-mid>a {
+            padding: .75rem .5rem;
+            max-width: 125px;
+            border: 4px solid var(--green-main);
+            border-radius: 30px;
+            font-size: 15px;
+        }
+        .card-mid > ul> li > img {
+            width: 14px;
+            height: 14px;
+        }
+        .top-left {
+            z-index: 1;
+            left: 5%;  
+    }
+    .top-left ul li {
+        font-family: 'Montserrat-Black';
+        font-size: 16px;   
+    }
+        /* card section end */
+        /* summary section start */
+        .summary >img {
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-position: center;
+            border-radius: 30px;
+            height: 800px;
+        }
+        .summary > div {
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .summary > div > div {
+            align-self: center;
+            width: 60%;
+            min-height: 160px;
+            border: 3px solid var(--green-light);
+            border-radius: 30px;
+        }
+        .summary > div > div > div >:nth-child(1) {
+           font-size: 26px;
+        }
+        .summary > div > div > div >:nth-child(2) {
+           font-size: 20px;
+        }
+        /* summary section end */
+
+        /* clients section start */
+        .clients-carousel-cell {
+            height: 150px;
+            border-radius: 25px;
+            padding: 0 4rem;
+            flex-basis: 25%;
+        }
+        .clients-cell-inner {
+            background: var(--green-main);
+            border-radius: 25px;
+            box-shadow: 0px 5px 7px 4px rgba(229,229,229,1);
+        }
+
+        .clients-cell-inner > img {
+            width: 100%;
+            height: 100px;
+            filter: saturate(0);
+            transition: 0.1s;
+        }
+
+        .clients-cell-inner:hover > img {
+            filter: saturate(1);
+        }
+        .clients > a {
+            max-width: 130px;
+            align-self: center;
+            margin: 5rem 0 2rem 0; 
+            font-size: 16px;
+            border-radius: 30px;
+            border: 4px solid var(--green-main);
+        }
+        /* clients section end */
+        /* mobile view end */
+
+        /* mid view start */
+        @media(min-width:768px){
+            .main-carousel {
+                margin: auto !important;
+                padding: auto !important;  
+            }
+            .card-section {
+                margin: auto !important;
+                padding: auto !important;
+            }
+            .clients-carousel-cell {
+                padding: 0 1rem;
+            }
+        }
+        /* mid view end */
+            
+        /* desktop view start */
+        @media (min-width:992px) {
+            .main-carousel {
+                height: 87%;
+                margin: auto !important;
+                padding: auto !important;
+            }
+
+            .inner>p {
+                font-size: 32px;
+            }
+
+            .slider-info {
+                z-index: 1;
+                top: 40%;
+                right: 5%;
+                transform: translate(-50%, -50%);
+            }
+
+            .card-section {
+                margin: auto !important;
+                padding: auto !important;
+            }
+            /* summary section start */
+            .summary {
+                padding: 0;
+                margin: 0;
+                max-width:none;
+            }
+            .summary > img {
+                border-radius: 0px;
+                height: 630px;
+            }
+            .summary > div {
+                top: 40%;
+                padding: 0 5rem;
+                margin:5rem 0;
+            }
+            .summary > div > div {
+                flex-basis: 100%;
+                min-height: 220px;
+            }
+            /*summary section end */
+            .clients > a {
+                margin: 5rem 0;
+            }
+            /* clients section end */
+        }
+
+        /* desktop view end */
+    </style>
+</head>
+
+<body>
+    <nav class="d-flex white-bg position-fixed align-items-center w-lg-100 w-100">
+        <div class="container d-flex d-lg-row justify-content-between align-items-center ">
+            <a class="d-block" href="index.html"><img src="assets/icons/cropped-zetadesign-navbar-logo.svg"
+                    alt="logo"></a>
+            <ul
+                class=" navbar-menu d-lg-flex flex-lg-row justify-content-lg-between align-items-center w-lg-auto white-lg-bg navbar-lg-text py-lg-0 flex-column navbar-text green-bg py-5">
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a
+                        href="products.html">Products</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a
+                        href="services.html">Services</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2 list-border"><a
+                        href="references.html">References</a></li>
+                <li class="position-relative ml-lg-3-5 py-lg-0 py-xl-0 py-2"><a href="contact.html">Contact Us</a></li>
+                <div class="phone d-lg-none d-flex p-1 regular position-absolute">
+                    <a class=" d-flex align-items-center" href="#"><img class="mr-0-25"
+                            src="assets/icons/phone-navbar.svg" alt="">+90 535 535 3535</a>
+                </div>
+            </ul>
+            <div class=" d-lg-block d-none button-main">
+                <a href="#">LET'S HAVE A TALK</a>
+            </div>
+            <div class="hamburger-menu d-flex d-lg-none flex-column justify-content-between align-items-center">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
+    <section class=" container main-carousel w-100 position-relative p-0 m-0">
+        <div class="carousel-cell w-100 h-100 p-1">
+            <img src="assets/images/slide-img-1.jpg" alt="slider 1" class="w-100 h-100">
+            <div class="inner position-absolute">
+                <p class="d-flex flex-column align-items-left main-text py-2">
+                    <span>Let's build</span>
+                    <span class="bold">your dreams</span>
+                    <span>with Zeta</span>
+                    <span>Construction</span>
+                </p>
+                <a class="main-text bold" href="#">DISCOVER NOW</a>
+            </div>
+            <div class="slider-info position-absolute d-flex main-text gap-1">
+                <p class="regular">01</p>
+                <p class="green-text bold">/03</p>
+            </div>
+        </div>
+        <div class="carousel-cell w-100 h-100 p-1">
+            <img src="assets/images/slide-img-1.jpg" alt="slider 2" class="w-100 h-100">
+            <div class="inner position-absolute">
+                <p class="d-flex flex-column align-items-left main-text py-2 regular">
+                    <span>Let's build</span>
+                    <span class="bold">your dreams</span>
+                    <span>with Zeta</span>
+                    <span>Construction</span>
+                </p>
+                <a class="main-text bold" href="#">DISCOVER NOW</a>
+            </div>
+            <div class="slider-info position-absolute d-flex main-text gap-1">
+                <p class="regular">02</p>
+                <p class="green-text bold">/03</p>
+            </div>
+        </div>
+        <div class="carousel-cell w-100 h-100 p-1">
+            <img src="assets/images/slide-img-1.jpg" alt="slider 3" class="w-100 h-100">
+            <div class="inner position-absolute">
+                <p class="d-flex flex-column align-items-left main-text py-2">
+                    <span>Let's build</span>
+                    <span class="bold">your dreams</span>
+                    <span>with Zeta</span>
+                    <span>Construction</span>
+                </p>
+                <a class="main-text bold" href="#">DISCOVER NOW</a>
+            </div>
+            <div class="slider-info position-absolute d-flex main-text gap-1">
+                <p class="regular">03</p>
+                <p class="green-text bold">/03</p>
+            </div>
+        </div>
+    </section>
+    <section class="container m-0 p-0 card-section">
+        <div class="card-wrapper d-flex flex-column flex-lg-row w-100 h-auto p-1 gap-2 justify-content-between main-text position-relative">
+            <div class="card h-auto black-bg d-flex flex-column py-3 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">1</li> 
+                    </ul>
+                </div>
+                <div class="card-title d-flex flex-column align-items-center gap-1">
+                    <div class="img-wrapper d-flex align-items-center justify-content-center mt-1">
+                        <img src="assets/icons/options-icon-1.svg" alt="option-icon-1" width="32px"
+                            height="32px">
+                    </div>
+                    <h1 class="regular">DESIGN</h1>
+                    <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-mid d-flex flex-column p-2">
+                    <a class="text-center bold" href="#">Learn More</a>
+                    <h3 class="green-text mt-4 mb-1">Guaranteed</h3>
+                    <ul class="d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-1.svg" alt="">Creativity</li>
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-2.svg" alt="">Innovation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card h-auto black-bg d-flex flex-column py-3 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">2</li> 
+                    </ul>
+                </div>
+                <div class="card-title d-flex flex-column align-items-center gap-1">
+                    <div class="img-wrapper d-flex align-items-center justify-content-center mt-1">
+                        <img src="assets/icons/options-icon-2.svg" alt="option-icon-1" width="32px"
+                            height="32px">
+                    </div>
+                    <h1 class="regular">TRADE</h1>
+                    <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class=" card-mid d-flex flex-column p-2">
+                    <a class="text-center bold" href="#">Learn More</a>
+                    <h3 class="green-text mt-4 mb-1">Guaranteed</h3>
+                    <ul class="d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-3.svg" alt="">Customer Satisfaction</li>
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-4.svg" alt="">High Quality</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card h-auto black-bg d-flex flex-column py-3 position-relative">
+                <div class="top-left d-flex flex-column position-absolute">
+                    <ul class="w-100" style="list-style: none; text-align: center;">
+                        <li class="main-text bold" style="border-bottom: 2px solid #61be6b;">0</li>
+                        <li class="main-text bold">3</li> 
+                    </ul>
+                </div>
+                <div class="card-title d-flex flex-column align-items-center gap-1">
+                    <div class="img-wrapper d-flex align-items-center justify-content-center mt-1">
+                        <img src="assets/icons/options-icon-3.svg" alt="option-icon-1" width="32px"
+                            height="32px">
+                    </div>
+                    <h1 class="regular">FABRICATION</h1>
+                    <p class="px-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class=" card-mid d-flex flex-column p-2">
+                    <a class="text-center bold" href="#">Learn More</a>
+                    <h3 class="green-text mt-4 mb-1">Guaranteed</h3>
+                    <ul class="d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-5.svg" alt="">Cost Effective</li>
+                        <li class="d-flex align-items-center"><img class="mr-0-5"
+                                src="assets/icons/optionlist-icon-6.svg" alt="">Warranty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container summary position-relative mt-lg-1">
+        <img class="w-100 position" src="assets/images/summary-bg.png" alt="">
+        <div class=" container w-100 d-flex flex-column flex-lg-row gap-2 gap-lg-4 position-absolute">
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <div class="bold main-text text-center">
+                    <p>+50</p>
+                    <p>PARTNERSHIP</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <div class="bold main-text text-center">
+                    <p>250</p>
+                    <p>PROJECT</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <div class="bold main-text text-center">
+                    <p>350</p>
+                    <p>CLIENT</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class=" container clients d-flex flex-column">
+        <div class="main-header mb-md-4 text-center pt-2 ">
+            <p class="grey bold px-1">ALL OF THEM</p>
+            <h2 class=green-text px-1">CLIENTS</h2>
+        </div>
+        <div class="clients-carousel d-md-flex flex-wrap justify-content-center">
+            <div class="clients-carousel-cell w-100  ml-0 ml-0-25 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/turkish_airlines.svg" alt="">
+                </div>
+            </div>
+            <div class="clients-carousel-cell w-100  d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/securex.svg" alt="">
+                </div>                    
+            </div>
+            <div class="clients-carousel-cell w-100 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/cat-mahal-hotel.svg" alt="">
+                </div>                    
+            </div>
+            <div class="clients-carousel-cell w-100 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/the-kingdom-of-buganda.svg" alt="">
+                </div>                    
+            </div>
+            <div class="clients-carousel-cell w-100 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/ametal.svg" alt="">
+                </div>                    
+            </div>
+            <div class="clients-carousel-cell w-100 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/ars-construction.svg" alt="">
+                </div>                    
+            </div>
+            <div class="clients-carousel-cell w-100 d-flex justify-content-center align-items-center">
+                <div class="clients-cell-inner w-100 py-1 px-2">
+                    <img src="assets/icons/references/growhomeseed.svg" alt="">
+                </div>                    
+            </div>                
+        </div>
+        <a class ="gray-text bold p-0-75 text-center" href="references.html">VIEW ALL</a>
+    </section>
+    <section class="contact container">
+        <div class="container py-2 py-lg-4 d-flex flex-column flex-lg-row justify-content-between justify-content-lg-center align-items-center gap-3">
+            <div class="map-wrapper col-lg-6 w-100">
+                <h2 class="green-text pt-2 pb-1 text-left">HERE WE ARE</h2>
+                <iframe class="w-100 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49307.24577560217!2d32.758646946912634!3d39.92933137681065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d348d5d5f41a55%3A0x27c5ef75cef0ea89!2zQXRhdMO8cmsgT3JtYW4gw4dpZnRsacSfaQ!5e0!3m2!1str!2str!4v1656580590252!5m2!1str!2str"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class=" form-wrapper col-sm-12 col-lg-5 py-5 px-md-4 form-bg d-flex justify-content-between flex-column gap-2">
+                <h2 class="text-center">Get an Offer!</h2>
+                <form class="w-100 d-flex justify-content-between flex-column gap-2 px-md-3" action="">
+                    <input type="text" name="" placeholder="Name Surname" required>
+                    <input type="tel" name="" placeholder="Phone Number" required>
+                    <input type="mail" min="0" name="" placeholder="E Mail" required>
+                    <input type="text" name="" placeholder="Your Message" required>
+                    <label for="form-check">
+                        <input class="mr-0-5" type="checkbox" name="form-check" id="form-check"> I agree to processing of personal data
+                    </label>
+                    <a class="text-center bold send-btn py-0-5 " href="#">SEND</a>
+                </form>
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer class="black-bg py-2">
+        <div class="container">
+            <div class="row p-1">
+                <div class="col-lg-6 d-lg-block">
+                    <ul class="p-1 main-text regular">
+                        <li class="py-0-5"><img src="assets/icons/footer-logo.svg" width="132px" height="66px" alt=""></li>
+                        <li class="py-0-5"><a href="#">Privacy Terms</a></li>
+                        <li class="py-0-5"><a href="#">About Us</a></li>
+                        <li class="d-block d-lg-none py-0-5"><a href="#">Contact Us</a></li>
+                    </ul>   
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ul class=" footer-lg main-text regular py-3">
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-mail-icon.svg" alt=""><a href="#">zetadesignsltd@gmail.com</a></li>
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-phone-icon.svg" alt=""><a href="#">+256 700 836 541</a></li>
+                        <li class="d-flex justify-content-left align-item-center py-0-5"><img class="pr-1" src="assets/icons/footer-loc-icon.svg" alt=""><a href="#">Plat 7/8 2nd Street Industrial Area Kampala/Uganda</a></li>
+                    </ul>
+                </div>
+                <p class="pt-3 main-text regular w-100 text-center">Copyrights reserved by Zeta Design</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/flickity.js"></script>
+<script>
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity(elem, {
+        cellAlign: 'center',
+        contain: true,
+    });
+    var elem_clients = document.querySelector('.clients-carousel');
+    var flkty_clients = new Flickity(elem_clients, {
+        cellAlign: 'center',
+        contain: true,
+        watchCSS: true
+    });
+</script>
+
+</html>
